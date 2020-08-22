@@ -1,0 +1,147 @@
+body{
+    background-color: #8257E5;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+}
+
+
+table{
+    text-align: center;
+    align-items: center;
+    margin-left: 15%;
+    width: 70%;
+}
+
+#table2{
+    text-align: center;
+    align-items: center;
+}
+
+.dados {
+    font-family: 'Ubuntu';
+    color: #32264D;
+}
+
+.Nome, .Nasc, .Estado, .Sexo, .objetivo, .endereco, .lingProg,  .idioma, .inputEnd,
+.cidade, .cidade1, .cep, .cep1, .tele, .tele1, .email, .email1, .rede, .rede1{
+   font-family: 'Ubuntu';
+    color: #32264D;
+    font-size: 20px;
+    width : 100px;
+}
+.input{
+    border-radius: 5px;
+    box-shadow:none;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1 none;
+    border-color: rgb(131, 127, 127);
+    outline: 0;
+}
+
+.Nome, .NomeInput{
+    background-color: #F0F0F7;
+    border-radius: 5px;
+    
+}
+.NameInput{
+    width: 100%;
+}
+
+.checks{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.Nasc, .NameInput, .inputObj, .objetivo, .endInput, .inputEnd, .cidade, .cidade1{
+    background-color: #F0F0F7;
+    border-radius: 5px;
+}
+
+.Estado, .EstadoInput, .Sexo, .NascInput, .endereco, .lingProg, .listProg,
+ .idioma, .idiomaTable, .cep, .cep1, .tele, .tele1, .email, .email1, .rede, .rede1{
+    background-color: #F0F0F7;
+    border-radius: 5px;
+}
+
+.inputObjetivo{
+    height: 100px;
+    border-radius: 10px;
+    width: 90%;
+    outline: none;
+}
+
+.listProg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.idiomaTable{
+    display: flex;
+    flex-direction: column;
+}
+
+.idiomaTable, .listProg{
+    font-family: 'Archivo';
+    font-size: 20px;
+    color: #8257E5;
+}
+
+input:required:valid, textarea:required:valid {
+    background-image: url("check.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+  
+input:required:invalid, input:focus:invalid, textarea:required:invalid, textarea:focus:invalid {
+      background-image: url("wrong.gif");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+.inputrede{
+    width: 20vw;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.linguas{
+    width: 10vw;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.buttons{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.best{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #04D361;
+    border: none;
+    outline: none;
+}
+
+.best1:hover{
+    background-color: white;
+}
+
+.b2{
+    margin-left: 10px;
+}
+.b1{
+    margin-right: 10px;
+}

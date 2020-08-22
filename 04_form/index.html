@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="mother">
+        <div class="principal">
+            <h1>Cadastre seu currículo</h1>
+        </div>
+
+        <h2 class="dados">1. Dados Pessoais</h2>
+        <form action="">
+            <table>
+                <tr>
+                    <td class="Nome">
+                        Nome:
+                    </td>
+                    <td class="NameInput">
+                        <input class="input" required placeholder="    Digite o seu nome" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Nasc">
+                        Data de Nascimento:
+                    </td>
+                    <td class="NascInput">
+                        <input class="input" type="date" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Estado">
+                        Estado Civil:
+                    </td>
+                    <td class="EstadoInput">
+                        <select class="input" name="EstadoInput" placeholder="Escolha seu sexo">
+                            <option selected value="solteiro">Solteiro</option>
+                            <option value="casado">Casado</option>
+                            <option value="viuvo">Viúvo</option>
+                            <option value="divorciado">Divorciado</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Sexo">
+                        Sexo:
+                    </td>
+                    <td class="EstadoInput">
+                        <div class="checks">
+                            <input class="input" type="radio" value="Masculino" name="gender" />
+                            <label for="Masculino">Masculino</label>
+                            <input class="input" type="radio" value="Feminino" name="gender" />
+                            <label for="Feminino">Feminino</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <h2 class="dados">2. Objetivo</h2>
+        <form action="">
+            <table id="table2">
+                <tr>
+                    <td class="objetivo">Objetivo</td>
+                    <td class="inputObj">
+                        <input class="inputObjetivo" type="text" required placeholder="Digite o seu Objetivo" /><br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <h2 class="dados">3. Contato</h2>
+        <form action="">
+            <table>
+                <tr>
+                    <td class="endereco">Endereço</td>
+                    <td class="endInput">
+                        <input class="input" type="text" required placeholder="Digite o seu endereço" /><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cidade">
+                        Cidade/Estado
+                    </td>
+                    <td class="cidade1">
+                        <input required class="input" name="cidade" placeholder="digite sua cidade" />
+                        /
+                        <input required class="input" name="estado" placeholder="digite seu estado" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cep">
+                        CEP:
+                    </td>
+                    <td class="cep1">
+                        <input class="input" name="cep" placeholder="digite seu CEP XXXXX-XXX" required
+                            pattern="[0-9]{5}[\-][0-9]{3}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tele">
+                        Telefone:
+                    </td>
+                    <td class="tele1">
+                        <input class="input" name="telefone" placeholder="Digite seu telefone(XX) XXXX-XXXX" required
+                            pattern="[\(][0-9]{2}[\)][0-9]{4}[\-][0-9]{4}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="email">
+                        E-mail:
+                    </td>
+                    <td class="email1">
+                        <input class="input" type="email" name="email" placeholder="digite seu email" required />
+                    </td>
+                </tr>
+                <td class="rede">
+                    Rede Social:
+                </td>
+                <td class="rede1" style="text-align: left">
+                    <div style="margin-left: 5%;">
+                        <img src="face.png" style="vertical-align: middle">
+                        http://facebook.com/
+                        <input class="inputrede" name="facebook" placeholder="Perfil facebook" />
+                    </div>
+                    <div style="margin-left: 5%;">
+                        <img src="linkedin.png" style="vertical-align: middle">
+                        http://linkedin.com/
+                        <input class="inputrede" name="linkedin" placeholder="Perfil linkedin" />
+                    </div>
+                    <div style="margin-left: 5%;">
+                        <img src="skype.png" style="vertical-align: middle">
+                        <input class="inputrede" name="skype" placeholder="Perfil Skype" />
+                    </div>
+                </td>
+                </tr>
+            </table>
+        </form>
+        <h2 class="dados">4. Conhecimentos</h2>
+        <form action="">
+            <table>
+                <tr>
+                    <td class="lingProg">Linguagens de Programação</td>
+                    <td>
+                        <div class="listProg">
+                            <div>
+                                <input class="c/c++" type="checkbox" name="c/c++" />
+                                <label for="c/c++">C/C++</label>
+                            </div>
+                            <div>
+                                <input class="java" type="checkbox" name="java" />
+                                <label for="java">Java</label>
+                            </div>
+                            <div>
+                                <input class="visualBasic" type="checkbox" name="visual" />
+                                <label for="visual">Visual Basic</label>
+                            </div>
+                            <div>
+                                <input class="dotNet" type="checkbox" name="dotNet" />
+                                <label for="dotNet">.Net</label>
+                            </div>
+                            <div>
+                                <input class="php" type="checkbox" name="php" />
+                                <label for="php">PHP</label>
+                            </div>
+                            <div>
+                                <input class="python" type="checkbox" name="python" />
+                                <label for="python">Python</label>
+                            </div>
+                            <div>
+                                <input class="html" type="checkbox" name="html" />
+                                <label for="html">HTML</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="idioma">Idiomas</td>
+                    <td class="idiomaTable">
+                        <div>Inglês
+                            <select name="ingles" class="linguas">
+                                <option selected value="basico">Básico</option>
+                                <option value="intermediario">Intermediário</option>
+                                <option value="avancado">Avançado</option>
+                            </select>
+                        </div>
+                        <div>
+                            Espanhol
+                            <select name="espanhol" class="linguas">
+                                <option selected value="basico">Básico</option>
+                                <option value="intermediario">Intermediário</option>
+                                <option value="avancado">Avançado</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+        <div class="buttons">
+            <div class="b1">
+                <button class="best best1">Limpar</button>
+            </div>
+            <div class="b2">
+                <button class="best best1">Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
