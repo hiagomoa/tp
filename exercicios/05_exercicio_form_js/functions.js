@@ -42,7 +42,7 @@ function Submit() {
             aux++;
     }
     if (aux == 0) {
-        console.log("kkkkkkkkkkk")
+        window.confirm("Deseja desse jeito?");
     }
 
 
